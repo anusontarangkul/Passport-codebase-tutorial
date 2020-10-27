@@ -1,54 +1,47 @@
-# Unit 14 Sequelize Homework: Reverse Engineering Code
+# Passport Authentication Codebase Tutorial
 
-Reverse engineer the starter code provided and create a tutorial for the code.
+[Deployment]()
 
-In the `Develop` folder, there is starter code for a project. Begin inspecting the code to get an understanding of each file's responsibility. Then, README markdown file, write a tutorial explaining _every_ file and its purpose in as fine as detail as possible. If one file is dependant on other files, be sure to let the user know.
+## Description
 
-At the end of the tutorial, add instructions for how you could now add changes to this project.
+This is an in-depth tutorial on the Passport Authentication application to help onboard new developers. This tutorial will explain every file and its purpose in as fine as detail as possible. This tutorial will include details of wheter one file is dependant on other files. The code will contain line-by-line commenting for further explanation.
 
-Following the [common templates for user stories](https://en.wikipedia.org/wiki/User_story#Common_templates), we can frame this challenge as follows:
+## Table of Contents
 
-```
-AS A developer
+## Technologies
 
-I WANT a walk-through of the codebase
+- HTML
+- CSS
+- Javascript
+- Node.js
 
-SO THAT I can use it as a starting point for a new project
-```
+## Dependencies
 
-## Business Context
+- bcryptjs
+- express
+- express-session
+- mysql2
+- passport
+- passport-local
+- sequelize
 
-When joining a new team, you will be expected to inspect a lot of code that you have never seen before. Rather than having a team member explain every line for you, you will dissect the code by yourself, saving any questions for a member of your team.
+## Credits
 
-## Acceptance Criteria
+David Anusontarangkul
 
-```md
-GIVEN a Node.js application using Sequelize and Passport
-WHEN I follow the walkthrough
-THEN I understand the codebase
-```
+[LinkedIn](https://www.linkedin.com/in/anusontarangkul/)
+[Github](https://github.com/anusontarangkul)
 
----
+This project is apart of the UC Berkeley Coding Bootcamp.
 
-## Submission on BCS
+## License
 
-You are required to submit the following:
+Copyright <2020> <Anusontarangkul>
 
-- A link to code repo that contains the code within the `Develop` directory. The repo should contain a tutorial written in markdown explaining how the application functions; a tutorial.
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-- The `Develop` directory should be updated with original comments on what the code is doing line-by-line.
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-- Optionally - you may also include a video explaining the application in `Develop` directory and display that video in the README Doc.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-- Both the video and the written tutorial should include visual graphics to support your lesson.
-
-`Note`: With both cases, written tutorial and/or video tutorial:
-
-- line-by-line commenting is expected within the code.
-- A formatted README that list a written introduction of the purpose of the application and a high level explanation of how it works.
-
-- **Detailed** explanation of how the application functions can be expressed in a **Video** **OR** a **Written Tutorial**
-
----
-
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+End license text.
