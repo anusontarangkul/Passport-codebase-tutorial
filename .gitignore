@@ -1,3 +1,8 @@
+# Ignoring node_modules/ on git
 node_modules/
+
+# Ignoring .DS_Store on git
 .DS_Store
+
+# Ignoring package-lock.json on git
 package-lock.json

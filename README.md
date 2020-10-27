@@ -58,9 +58,13 @@ This is an in-depth tutorial on the Passport Authentication application to help 
 
   - [package.json](#package.json)
 
+  - [README.md](#README.md)
+
   - [server.js](#server.js)
 
 - [How To Add Changes](#Changes)
+
+- [Installation](#Installation)
 
 - [Technologies](#Technologies)
 
@@ -116,13 +120,23 @@ This is an in-depth tutorial on the Passport Authentication application to help 
 
 ### .gitignore
 
+The purpose of .gitignore is for git to ignore certain files inside of it. Node_modules and package-lock.json are ignored because it saves memory and the files can easily be installed with the command "npm install." .DS_Store is ignored because it can cause conflict for mac users depending on their directory settings.
+
 ### LICENSE
+
+The purpose of the LICENSE is to allow the user to know what permission they have with using the software. For this application, the MIT LICENSE is used.
 
 ### package.json
 
-#### server.js
+### README.md
+
+The purpose of the README file is to provide information on how users can use the Passport Authentication application. It contains the description, tutorial, installation, technologies, dependencies, credits, and license for the app.
+
+### server.js
 
 ## Changes
+
+## Installation
 
 ## Technologies
 
