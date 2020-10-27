@@ -8,6 +8,122 @@ This is an in-depth tutorial on the Passport Authentication application to help 
 
 ## Table of Contents
 
+- [Files](#Files)
+
+  - [config Directory](#config)
+
+    - [middleware Directory](#middleware)
+
+      - [isAuthenticated.js](#isAuthenticated.js)
+
+    - [config.json](#config.json)
+
+    - [passport.js](#passport.js)
+
+  - [models directory](#models)
+
+    - [index.js](#index.js)
+
+    - [user.js](#user.js)
+
+  - [public directory](#public)
+
+    - [js directory](#js)
+
+      - [login.js](#login.js)
+
+      - [members.js](#members.js)
+
+      - [signup.js](#signup.js)
+
+    - [stylesheets directory](#stylesheets)
+
+      - [style.css](#style.css)
+
+    - [login.html](#login.html)
+
+    - [members.html](#members.html)
+
+    - [signup.html](#signup.html)
+
+  - [routes directory](#routes)
+
+    - [api-routes.js](#api-routes.js)
+
+    - [html-routes.js](#html-routes.js)
+
+  - [.gitignore](#.gitignore)
+
+  - [LICENSE](#LICENSE)
+
+  - [package.json](#package.json)
+
+  - [server.js](#server.js)
+
+- [How To Add Changes](#Changes)
+
+- [Technologies](#Technologies)
+
+- [Dependencies](#Dependencies)
+
+- [Credits](#Credits)
+
+- [License](#License)
+
+## Files
+
+### config
+
+#### middleware
+
+##### isAuthenticated.js
+
+#### config.json
+
+#### passport.js
+
+### models
+
+#### index.js
+
+#### user.js
+
+### public
+
+#### js
+
+##### login.js
+
+##### members.js
+
+##### signup.js
+
+#### stylesheets
+
+##### style.css
+
+#### login.html
+
+#### members.html
+
+#### signup.html
+
+### routes
+
+#### api-routes.js
+
+#### html-routes.js
+
+### .gitignore
+
+### LICENSE
+
+### package.json
+
+#### server.js
+
+## Changes
+
 ## Technologies
 
 - HTML
