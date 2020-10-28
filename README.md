@@ -114,9 +114,15 @@ This is an in-depth tutorial on the Passport Authentication application to help 
 
 ### routes
 
+The routes directory contains the different javascript files that supports the requests.
+
 #### api-routes.js
 
+This routes supports requests for APIs. It requires the models folder and the passport script file inside config. It allows users to signup for their account when they enter in their email address and password. This will be added to the database. There is also a validator to validate the information the user entered to meet the login criteria. There is a logout route and a route where the user can get back their email address and id after being logged in.
+
 #### html-routes.js
+
+This routes supports get requets for "/", "/members", and "/login." The path is being required for redirecting and isAuthenticated is being required to check if the user is login. If the user is login, they will be redirected to the "/members" page when they go to "/" or "/login." If the user doesn't have an account, they will be directed to the the login page. There is an authentification middlewar so the user can't access "/members" without being login and will be redirected to the signup page.
 
 ### .gitignore
 
