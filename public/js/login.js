@@ -2,11 +2,11 @@
 $(document).ready(function () {
   // Getting references to our form and inputs
 
-  // Seting loginForm variable from html
+  // Seting loginForm variable to html element
   var loginForm = $("form.login");
-  // Setting email input variable from html
+  // Setting email input variable to html element
   var emailInput = $("input#email-input");
-  // Setting password input variable from html
+  // Setting password input variable to html element
   var passwordInput = $("input#password-input");
 
   // When the form is submitted, we validate there's an email and password entered
@@ -20,7 +20,7 @@ $(document).ready(function () {
       // Obtaining passwordInput value and trimming white spaces
       password: passwordInput.val().trim()
     };
-    //Checking to see if email and password doesn't exist
+    // Validating email and password are not blank.
     if (!userData.email || !userData.password) {
       return;
     }

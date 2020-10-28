@@ -62,8 +62,6 @@ This is an in-depth tutorial on the Passport Authentication application to help 
 
   - [server.js](#server.js)
 
-- [How To Add Changes](#Changes)
-
 - [Installation](#Installation)
 
 - [Technologies](#Technologies)
@@ -102,7 +100,11 @@ The models directory is used to hold class files that processes database operati
 
 #### index.js
 
+Index.js requires the File system, path, and sequelize module. It sets the environment variable depending on production or deployment. Index.js requires the "config.json" file and uses sequelize as a library to organize the models directory.
+
 #### user.js
+
+The purpose of user.js is to hash the password that user entered. This file requires the bcrypt dependency. User.js validates that the email must be a proper email before creating and also the password cannot be null. A custom method is created for the User model. This checks if the unhased passwored entered by the user can be compared to a hashed password stored in the database. Before the user is created, the password will be hashed.
 
 ### public
 
@@ -140,17 +142,23 @@ This is the HTML file the user would go to login. This file is style through sty
 
 Inside this page, the user can enter in their email address and password to login. If the user does not have a login, the user can click on the sign up link.
 
+![screenshot](login-screenshot.png)
+
 #### members.html
 
 After the user logins, the user will enter the this member.html page. In the navbar, the user can logout by clicking the logout link. The page also welcomes the user in the header of the page.
 
 There is a isAuthenticated.js middleware that prevents users to directly access this link without first logging in. This html file is connected to style.css and bootstrap for styling. It is also connected to members.js to provide functionality and the jQuery library is used for convient code.
 
+![screenshot](welcome-screenshot.png)
+
 #### signup.html
 
 If the user does not have an account and wants to sign up, the user will go to this page. The user will be able to enter in an email and password to sign up for an account. The user can also go back to the login page if the user already has an account by clicking on "or login here."
 
 This file is styled by bootstrap and style.css. The signup.js file gives it functionality. The jQuery library is used for convient code.
+
+![screenshot](signup-screenshot.png)
 
 ### routes
 
@@ -184,9 +192,9 @@ The purpose of the README file is to provide information on how users can use th
 
 The server.js is the file that is going to be run to access the application. This file is dependent on the dependencies "express", "express-session", and "passport". This file is dependent on the files inside the direcotry "models" and the directory "routes." The server.js file connects to the port and syncs to the database. It uses middleware to access the request and response objects.
 
-## Changes
-
 ## Installation
+
+Run npm install.
 
 ## Technologies
 
