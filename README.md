@@ -114,9 +114,17 @@ The js directory is used to hold script files that the users of the application 
 
 ##### login.js
 
+The login.js provides functionality to the login.html page. It uses DOM manipulation and jQuery as a library to connect the elements that needs to be manipulated.
+
+The file begins by creating variables to elements that would me manipulated. An event listener is used after the user enters in the email and password. If the login is successful, the user will go to the members page.
+
 ##### members.js
 
+The members.js file gets the request from the user to figure out which user is login and then updates the HTMl on the page based on the member's name. jQuery is used as a library and this page is connected to members.html.
+
 ##### signup.js
+
+The purpose of signup.js is to provide functionality to signup.html so the user can create an account. The script files begins by assigning variables to elements being manipulated. Once the user fills out the email and password form, there is an event listener for submitting the information. The event listener trims the white space of the inputs and validates that the inputs are not empty. Next, the signUpUser function is called and a post request is made with the input. If the post is successful, the user is redirected to the members page. If it fails, the error will be alerted to the user. jQuery is used as a library for this script for a more convenient code.
 
 #### stylesheets
 
