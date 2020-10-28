@@ -78,13 +78,23 @@ This is an in-depth tutorial on the Passport Authentication application to help 
 
 ### config
 
+This directory contains files used to configure the parameters and initial settings.
+
 #### middleware
+
+This directory contailes configuration files that are middleware.
 
 ##### isAuthenticated.js
 
+This application requires users to login to access certain routes. This middleware restricts the users to certain routes that requires being logged in when the user isn't logged in. If the user tries to acess a route without being logged in, the user will be redirected to the "/" page.
+
 #### config.json
 
+The purpose of config.json is to define the configuration details for development, test, and production.
+
 #### passport.js
+
+The purpose of passport.js is to use the passport dependency, passport-local dependency, and mdoels directory to allow the user to login to the application. Passport.js takes in the user's email address and password. If there is no email inside the database, "incorrect email" is returned to the user. If the password doesn't match the email, "incorrect password" is returned to the user. If the password and email matches, the user is able to login. In order to help keep authentication state across HTTP requests, sequelize needs to serialize and deserialize the user.
 
 ### models
 

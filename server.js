@@ -34,9 +34,11 @@ app.use(express.static("public"));
 app.use(session({ secret: "keyboard cat", resave: true, saveUninitialized: true }));
 
 // Allowing middleware to initalize the passport
+// Checking to see if user property is not null
 app.use(passport.initialize());
 
 // Allowing middleware to alter the request object and change the 'user' value into the deserialized user object.
+// Bringing up session based on the user.
 app.use(passport.session());
 
 // Requiring our routes
