@@ -1,35 +1,49 @@
+<!-- Informing the browser of the user that the document being rendered is a HTML document -->
 <!DOCTYPE html>
+<!-- Setting the primary language of the document to english -->
 <html lang="en">
+  <head>
+    <!-- Providing a title for the page -->
+    <title>Passport Authentication</title>
+    <!-- Specifying the character encoding for the HTML document -->
+    <meta charset="UTF-8" />
+    <!-- Allowing webpage to be responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Linking bootstrap to file -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/lumen/bootstrap.min.css"
+    />
+    <!-- Linking css file to file -->
+    <link href="stylesheets/style.css" rel="stylesheet" />
+  </head>
 
-<head>
-  <title>Passport Authentication</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/lumen/bootstrap.min.css">
-  <link href="stylesheets/style.css" rel="stylesheet">
-</head>
-
-<body>
-  <nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="/logout">
-        Logout
-      </a>
-    </div>
-  </div>
-</nav>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 col-md-offset-3">
-        <h2>Welcome <span class="member-name"></span></h2>
+  <body>
+    <!-- Creating navbar -->
+    <nav class="navbar navbar-default">
+      <!-- Creating div inside to provide a full width container for viewport -->
+      <div class="container-fluid">
+        <!-- Creating header inside navbar -->
+        <div class="navbar-header">
+          <!-- Creating logout link inside navbar -->
+          <a class="navbar-brand" href="/logout"> Logout </a>
+        </div>
+      </div>
+    </nav>
+    <!-- Creating containter div -->
+    <div class="container">
+      <!-- Creating row div inside container -->
+      <div class="row">
+        <!-- Creating column inside row -->
+        <div class="col-md-6 col-md-offset-3">
+          <!-- Creating welcome header for page -->
+          <h2>Welcome <span class="member-name"></span></h2>
+        </div>
       </div>
     </div>
-  </div>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script type="text/javascript" src="js/members.js"></script>
-
-</body>
-
+    <!-- Providing access to jQuery library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Connecting to login script -->
+    <script type="text/javascript" src="js/members.js"></script>
+  </body>
 </html>

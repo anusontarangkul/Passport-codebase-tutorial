@@ -134,7 +134,15 @@ Inside this page, the user can enter in their email address and password to logi
 
 #### members.html
 
+After the user logins, the user will enter the this member.html page. In the navbar, the user can logout by clicking the logout link. The page also welcomes the user in the header of the page.
+
+There is a isAuthenticated.js middleware that prevents users to directly access this link without first logging in. This html file is connected to style.css and bootstrap for styling. It is also connected to members.js to provide functionality and the jQuery library is used for convient code.
+
 #### signup.html
+
+If the user does not have an account and wants to sign up, the user will go to this page. The user will be able to enter in an email and password to sign up for an account. The user can also go back to the login page if the user already has an account by clicking on "or login here."
+
+This file is styled by bootstrap and style.css. The signup.js file gives it functionality. The jQuery library is used for convient code.
 
 ### routes
 
