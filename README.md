@@ -98,13 +98,19 @@ The purpose of passport.js is to use the passport dependency, passport-local dep
 
 ### models
 
+The models directory is used to hold class files that processes database operations.
+
 #### index.js
 
 #### user.js
 
 ### public
 
+The public directory is used to hold files that users of the application will see and interact with.
+
 #### js
+
+The js directory is used to hold script files that the users of the application will interact with.
 
 ##### login.js
 
@@ -114,9 +120,17 @@ The purpose of passport.js is to use the passport dependency, passport-local dep
 
 #### stylesheets
 
+The stylesheets directory is to hold css files that the users of the apllicaition will see.
+
 ##### style.css
 
+The purpose of style.css is to give styling to the html files. This file is providing a 50px margin from the top on the signup and login form.
+
 #### login.html
+
+This is the HTML file the user would go to login. This file is style through style.css and bootstrap. It is also powered by the login.js file for functionality. The jQuery library is connected for more convenient code as well.
+
+Inside this page, the user can enter in their email address and password to login. If the user does not have a login, the user can click on the sign up link.
 
 #### members.html
 
