@@ -128,11 +128,15 @@ The purpose of the LICENSE is to allow the user to know what permission they hav
 
 ### package.json
 
+The purpose of package.json is to the metadata for the application. It holds multiple dependencies that can be used through running "npm install" in the command the line. The dependenices for this package.json file includes bcryptjs, express, express-session, mysql2, passport, passport-local, and sequelize.
+
 ### README.md
 
 The purpose of the README file is to provide information on how users can use the Passport Authentication application. It contains the description, tutorial, installation, technologies, dependencies, credits, and license for the app.
 
 ### server.js
+
+The server.js is the file that is going to be run to access the application. This file is dependent on the dependencies "express", "express-session", and "passport". This file is dependent on the files inside the direcotry "models" and the directory "routes." The server.js file connects to the port and syncs to the database. It uses middleware to access the request and response objects.
 
 ## Changes
 
